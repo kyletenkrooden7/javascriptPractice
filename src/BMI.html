@@ -1,0 +1,46 @@
+<!-- Author: Kyle Tenkrooden -->
+<!-- Javascript/html basic BMI calculator -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI Calculator</title>
+
+    <script>
+
+        function calcBMI(weight, height)
+        {
+            let BMI = (weight*703)/(height * height);
+            let result;
+
+            if(BMI > 30)
+               result = "You are considered obese";
+
+            else if(BMI >= 25 && BMI <= 30)
+                result = "You are considered overweight";
+
+            else if(BMI >= 18.5 && BMI <=25)
+                result = "Your BMI is considered Normal";
+
+            else
+                result = "You are considered underweight";
+
+            alert(result);
+
+            return BMI;
+
+        }
+
+    </script>
+</head>
+<body>
+
+Weight (lbs) <input type = "text" id= "weight">
+height (inches) <input type = "text" id= "height">
+BMI <input type = "text" id = "BMI">
+<input type = "button" onclick = "document.getElementById('BMI').value =
+calcBMI(parseFloat(document.getElementById('weight').value), parseFloat(document.getElementById('height').value))" value = "Calculate BMI">
+
+</body>
+</html>

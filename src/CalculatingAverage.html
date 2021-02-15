@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CalcAverage</title>
+
+    <script>
+        function calcAvg(num1,num2,num3)
+        {
+            return (num1 + num2 + num3) /3;
+        }
+    </script>
+</head>
+<body>
+<h1> Calculating the Average of 3 numbers passing values</h1>
+<form action ="">
+
+    Number 1 <input type = "text" id ="num1" value = "0" ><br>
+    Number 2 <input type = "text" id ="num2" value = "0" ><br>
+    Number 3 <input type = "text" id ="num3" value = "0" ><br>
+    Result <input type ="text" id="result" value="0"><br>
+    <input type = "button" onclick="document.getElementById('result').value = calcAvg(Number(document.getElementById('num1').value),
+    Number(document.getElementById('num2').value),
+    Number(document.getElementById('num3').value))" value="Average">
+
+</form>
+
+
+</body>
+</html>

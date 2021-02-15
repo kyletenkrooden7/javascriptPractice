@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculating Powers</title>
+</head>
+<body>
+<script>
+function calcPower(num1,pow)
+{
+    return(Math.pow(num1,pow))
+}
+</script>
+
+</body>
+
+<form action="">
+
+   Number1 <input type = "text" id="num1" value="0">
+   Power <input type = "text" id="pow" value = "0">
+   Result <input type = "text" id="result" value ="0">
+    <input type = "button" onclick = "document.getElementById('result').value = calcPower(Number(document.getElementById('num1').value),
+   Number(document.getElementById('pow').value))" value='Calculate'>
+
+</form>
+</html>

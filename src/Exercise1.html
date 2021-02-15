@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise1</title>
+</head>
+
+<script defer>
+
+    function calcPrice(price)
+    {
+        let result;
+
+        if(price<=25)
+            result = price + 1.50;
+
+        else if(price>25)
+            result = (price * 0.1) + price;
+
+
+        return result;
+
+    }
+
+</script>
+<body>
+<h1> Calculating Shipping and Handling fee for purchases</h1>
+<form action ="">
+
+ Please enter a price: <input type = "text" id= "price">
+    Result <input type = "text" id ="result">
+ <input type = "button" onclick = "document.getElementById('result').value = calcPrice(Number(document.getElementById('price').value))" value = "Calculate" >
+
+
+
+
+</form>
+
+
+
+
+
+</body>
+</html>

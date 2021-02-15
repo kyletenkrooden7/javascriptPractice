@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Functions</title>
+</head>
+<body>
+
+<script>
+                           //parameters
+    printStudentNames('Clive','Joseph','umfumwemfwefwe');
+
+                                 //arguments
+function printStudentNames(student1, student2, student3) //clive gets pasted into student1
+{
+   document.write(`<p> ${student1} </p>
+                   <p> ${student2}</p>
+                   <p> ${student3}</p>`);
+}
+
+function averageNumbers(a,b,c)
+{
+    return a + b + c /3;
+}
+
+let returnValue = averageNumbers(1,2,3);
+alert(returnValue);
+
+//or
+                           // window.alert(averageNumbers(1,2,3));
+</script>
+
+</body>
+</html>
